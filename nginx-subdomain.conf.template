@@ -1,0 +1,56 @@
+# ==============================================================================
+# Шаблон конфигурации Nginx для поддомена лендинга
+# Замените stroy.castleweb.ru на ваш реальный поддомен
+# ==============================================================================
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name stroy.castleweb.ru;
+
+    # Редирект на HTTPS (Cloudflare Flexible/Full)
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name stroy.castleweb.ru;
+
+    # Путь к SSL сертификату (Cloudflare Origin или Let's Encrypt)
+    ssl_certificate /etc/letsencrypt/live/castleweb.ru/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/castleweb.ru/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers off;
+
+    # Gzip сжатие для быстродействия
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css text/xml application/json application/javascript application/xml+rss application/atom+xml image/svg+xml;
+
+    # Защитные заголовки
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+
+    # Корневая папка с файлами лендинга
+    root /var/www/stroy-landing;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Кэширование статических ассетов
+    location ~* \.(?:css|js|woff2?|ttf|svg|png|jpg|jpeg|webp|ico)$ {
+        expires 30d;
+        add_header Cache-Control "public, no-transform";
+        access_log off;
+    }
+}
