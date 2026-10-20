@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <script>if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js");</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Верста — строительство домов под ключ в Москве</title>
+  <meta name="description" content="Концепт сайта строительной компании «Верста»: дома под ключ в Москве и области, фиксированная цена в договоре, гарантия 15 лет.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght,YTUC@8..144,25..120,100..600,528..760&family=Roboto+Mono:wght@300;400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 34 8"><path d="M0 4h33M29.5 .8 33 4l-3.5 3.2" fill="none" stroke="currentColor" stroke-width="1"/></symbol>
+</svg>
+
+<header class="bar is-top" id="bar" data-theme="dark">
+  <a class="logo" href="#top" aria-label="Верста, наверх">Верста</a>
+  <nav class="bar-nav" id="site-nav" aria-label="Основное меню">
+    <a href="#services">Услуги</a>
+    <a href="#catalog">Проекты</a>
+    <a href="#built">Объекты</a>
+    <a href="#process">Этапы</a>
+    <a href="#calc">Стоимость</a>
+    <a href="#about">О компании</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contact">Контакты</a>
+    <a class="nav-phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
+    <button class="nav-cta" type="button" data-modal="call">Заказать звонок</button>
+  </nav>
+  <div class="bar-aside">
+    <a class="bar-phone" href="tel:+74950000000">+7 (495) 000-00-00</a>
+    <button class="bar-cta" type="button" data-modal="call">Заказать звонок</button>
+  </div>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+    <svg width="26" height="10" viewBox="0 0 26 10" aria-hidden="true"><path d="M0 .5h26M0 9.5h26" stroke="currentColor"/></svg>
+  </button>
+</header>
+
+<!-- 01. Hero -->
+<section class="hero" id="top" data-bar="dark" aria-label="Строительство домов под ключ">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="is-active" src="https://images.unsplash.com/photo-1608619769165-25647672335f?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" alt="" fetchpriority="high">
+    <img src="https://images.unsplash.com/photo-1616756405607-590773a1fbf4?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" alt="">
+    <img src="https://images.unsplash.com/photo-1531870095880-cac1a675e830?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" alt="">
+  </div>
+  <div class="hero-shade" aria-hidden="true"></div>
+
+  <div class="hero-side">
+    <button class="counter" type="button" id="hero-next" aria-label="Следующий слайд">
+      <span class="counter-cur" id="hero-cur">01</span>
+      <span class="dash" aria-hidden="true"></span>
+      <span class="counter-total">03</span>
+    </button>
+    <div class="hero-notes">
+      <p class="hero-note is-active">Строим каменные, каркасные и деревянные дома. Фиксируем <em>цену и срок</em> в договоре, даём гарантию на&nbsp;15&nbsp;лет.</p>
+      <p class="hero-note">Каркас из бруса камерной сушки с <em>собственного производства.</em> Скидка 10% на&nbsp;каркасные дома до&nbsp;конца сезона.</p>
+      <p class="hero-note">Ипотека от 6% в банках-партнёрах. Поможем <em>направить материнский</em> капитал на&nbsp;строительство.</p>
+    </div>
+    <span class="vline" aria-hidden="true"></span>
+  </div>
+
+  <div class="hero-titles">
+    <h1 class="hero-title is-active">Строим дома<br>под ключ</h1>
+    <p class="hero-title" aria-hidden="true">Деревянные<br>дома</p>
+    <p class="hero-title" aria-hidden="true">Семейная<br>ипотека</p>
+  </div>
+
+  <div class="hero-actions">
+    <a class="hero-link" href="#catalog"><b>Ознакомиться</b> с проектами <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+    <a class="btn btn--solid" href="#calc">Рассчитать стоимость</a>
+  </div>
+
+  <p class="hero-meta"><span class="hero-meta-city">Москва и МО <span class="dash" aria-hidden="true"></span></span><span>14 лет</span></p>
+</section>
+
+<!-- 02. Услуги -->
+<section class="light" id="services" data-bar="light" aria-labelledby="services-title">
+  <div class="light-head">
+    <h2 class="light-title" id="services-title" data-split>Строительство<br>под ключ</h2>
+    <p class="light-lead">Полный цикл работ: от подбора проекта и&nbsp;коммуникаций до благоустройства участка. Один договор, одна команда, одна цена.</p>
+    <ul class="light-list">
+      <li><a href="#catalog">Каменные дома</a></li>
+      <li><a href="#catalog">Деревянные дома</a></li>
+      <li><a href="#catalog">Каркасные дома</a></li>
+    </ul>
+  </div>
+
+  <ol class="cols">
+    <li class="col">
+      <figure class="col-fig"><img class="col-img" src="https://images.unsplash.com/photo-1623171170667-3906bae07de9?w=900&q=75&auto=format&fit=crop" width="900" height="812" loading="lazy" alt="Современный загородный дом вечером со светом в окнах"></figure>
+      <p class="num">01 <span class="dash" aria-hidden="true"></span></p>
+      <h3 class="col-title">Проектирование<br>и подбор проекта</h3>
+      <p class="col-text">Подберём проект и&nbsp;комплектацию под ваши желания. Архитектор и&nbsp;дизайнер создадут индивидуальный проект и&nbsp;даже расставят мебель.</p>
+      <a class="more" href="#catalog">Смотреть проекты <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </li>
+    <li class="col">
+      <figure class="col-fig"><img class="col-img" src="https://images.unsplash.com/photo-1615461475583-fc3100788a93?w=900&q=75&auto=format&fit=crop" width="900" height="812" loading="lazy" alt="Монолитный каркас здания в строительных лесах"></figure>
+      <p class="num">02 <span class="dash" aria-hidden="true"></span></p>
+      <h3 class="col-title">Строительство<br>и коммуникации</h3>
+      <p class="col-text">Стоимость инженерных коммуникаций рассчитаем на&nbsp;этапе проектирования. При заказе полного комплекса септик в&nbsp;подарок.</p>
+      <a class="more" href="#process">Как мы строим <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </li>
+    <li class="col">
+      <figure class="col-fig"><img class="col-img" src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=900&q=75&auto=format&fit=crop" width="900" height="812" loading="lazy" alt="Терраса с бассейном у загородного дома на закате"></figure>
+      <p class="num">03 <span class="dash" aria-hidden="true"></span></p>
+      <h3 class="col-title">Благоустройство<br>участка</h3>
+      <p class="col-text">Обустраиваем участок параллельно со&nbsp;строительством, чтобы к&nbsp;завершению работ вы&nbsp;приехали в&nbsp;готовый дом.</p>
+      <a class="more" href="#built">Готовые объекты <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </li>
+  </ol>
+</section>
+
+<!-- 03. Каталог -->
+<section class="dark catalog" id="catalog" data-bar="dark" aria-labelledby="catalog-title">
+  <div class="catalog-head">
+    <div>
+      <p class="counter counter--static" aria-hidden="true"><span class="counter-cur" id="cards-cur">01</span><span class="dash"></span><span class="counter-total">06</span></p>
+      <h2 class="catalog-title" id="catalog-title" data-split>Каталог домов</h2>
+    </div>
+    <p class="catalog-lead">Готовые проекты, которые мы строим под ключ. 96 проектов в&nbsp;каталоге: выберите свой формат жизни.</p>
+    <button class="catalog-all" type="button" data-modal="catalog">Скачать каталог PDF</button>
+  </div>
+
+  <ul class="cards" id="cards">
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Двухэтажный дом с подсветкой вечером">
+      <div class="card-body">
+        <p class="card-num">01</p>
+        <p class="card-cat">Новинка</p>
+        <h3 class="card-name">Ольха 84</h3>
+        <p class="card-area">84 м²</p>
+        <p class="card-price"><span>—от</span> 3 940 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Ольха 84">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1678889284769-b7dcbec1f082?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Дом с бассейном ночью">
+      <div class="card-body">
+        <p class="card-num">02</p>
+        <p class="card-cat">Новинка</p>
+        <h3 class="card-name">Кедр 202</h3>
+        <p class="card-area">202 м²</p>
+        <p class="card-price"><span>—от</span> 9 120 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Кедр 202">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1515541369882-f47fa81d1454?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Дом в лесу в сумерках">
+      <div class="card-body">
+        <p class="card-num">03</p>
+        <p class="card-cat">Новинка</p>
+        <h3 class="card-name">Ясень 160</h3>
+        <p class="card-area">160 м²</p>
+        <p class="card-price"><span>—от</span> 7 380 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Ясень 160">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1774685110718-c5b4fe026144?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Современный дом с балконами вечером">
+      <div class="card-body">
+        <p class="card-num">04</p>
+        <p class="card-cat">Каменный дом</p>
+        <h3 class="card-name">Дуб 98</h3>
+        <p class="card-area">98 м²</p>
+        <p class="card-price"><span>—от</span> 4 260 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Дуб 98">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1784559888124-602bb84cc3c7?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Кирпичный дом ночью со светом в окнах">
+      <div class="card-body">
+        <p class="card-num">05</p>
+        <p class="card-cat">Каменный дом</p>
+        <h3 class="card-name">Сосна 120</h3>
+        <p class="card-area">120 м²</p>
+        <p class="card-price"><span>—от</span> 5 150 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Сосна 120">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+    <li class="card">
+      <img src="https://images.unsplash.com/photo-1783490244502-cd5f236e3780?w=700&q=75&auto=format&fit=crop" width="700" height="1100" loading="lazy" alt="Современный дом с подсвеченным бассейном">
+      <div class="card-body">
+        <p class="card-num">06</p>
+        <p class="card-cat">Каменный дом</p>
+        <h3 class="card-name">Бук 191</h3>
+        <p class="card-area">191 м²</p>
+        <p class="card-price"><span>—от</span> 8 430 000 ₽</p>
+        <a class="more" href="#calc" aria-label="Рассчитать стоимость проекта Бук 191">Рассчитать <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cta-band">
+    <p class="cta-band-text">Не нашли свой проект? Архитектор подготовит индивидуальный за&nbsp;14&nbsp;дней, и&nbsp;это бесплатно при заказе строительства.</p>
+    <div class="cta-band-actions">
+      <button class="btn btn--solid" type="button" data-modal="project">Обсудить проект</button>
+      <button class="btn" type="button" data-modal="catalog">Скачать каталог PDF</button>
+    </div>
+  </div>
+</section>
+
+<!-- 04. О компании -->
+<section class="light about" id="about" data-bar="light" aria-labelledby="about-title">
+  <div class="light-head about-head">
+    <h2 class="light-title" id="about-title" data-split>Знаем о стройке<br>всё</h2>
+    <p class="light-lead">И поможем со всеми хлопотами: подберём проект, проконсультируем, оформим ипотеку и&nbsp;проследим за&nbsp;каждым этапом работ.</p>
+  </div>
+
+  <ol class="stairs">
+    <li class="step">
+      <p class="num">01 <span class="dash" aria-hidden="true"></span></p>
+      <figure class="step-img"><img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=900&q=75&auto=format&fit=crop" width="900" height="600" loading="lazy" alt="Мастер на собственном производстве обрабатывает деревянный брус"></figure>
+      <h3 class="col-title">Собственное<br>производство</h3>
+      <p class="col-text">Каркас дома из&nbsp;пиломатериала камерной сушки с&nbsp;нашего производства. Контролируем качество от&nbsp;бревна до&nbsp;стены.</p>
+      <p class="step-stat"><b data-count="14">14</b><span>лет опыта в&nbsp;строительстве</span></p>
+    </li>
+    <li class="step">
+      <p class="num">02 <span class="dash" aria-hidden="true"></span></p>
+      <figure class="step-img"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=75&auto=format&fit=crop" width="900" height="600" loading="lazy" alt="Специалист склонился над чертежом дома"></figure>
+      <h3 class="col-title">Профессиональная<br>консультация</h3>
+      <p class="col-text">Все наши менеджеры имеют строительное образование и&nbsp;подберут оптимальный вариант под бюджет и&nbsp;участок.</p>
+      <p class="step-stat"><b data-count="96">96</b><span>проектов в&nbsp;каталоге</span></p>
+    </li>
+    <li class="step">
+      <p class="num">03 <span class="dash" aria-hidden="true"></span></p>
+      <figure class="step-img"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=75&auto=format&fit=crop" width="900" height="600" loading="lazy" alt="Прораб и бригада на строительной площадке"></figure>
+      <h3 class="col-title">Технический<br>надзор</h3>
+      <p class="col-text">За&nbsp;ходом работ следит квалифицированный прораб, а&nbsp;каждый этап принимает независимый инженер.</p>
+      <p class="step-stat"><b data-count="15">15</b><span>лет гарантии на&nbsp;дом</span></p>
+    </li>
+    <li class="step">
+      <p class="num">04 <span class="dash" aria-hidden="true"></span></p>
+      <figure class="step-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=75&auto=format&fit=crop" width="900" height="675" loading="lazy" alt="Макет дома и ключи на деревянном столе"></figure>
+      <h3 class="col-title">Ипотека<br>и маткапитал</h3>
+      <p class="col-text">Выгодные ипотечные продукты от&nbsp;банков-партнёров. Поможем направить материнский капитал на&nbsp;строительство дома.</p>
+      <a class="more" href="#calc">Посчитать платёж <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </li>
+  </ol>
+</section>
+
+<!-- 05. Построено -->
+<section class="dark built" id="built" data-bar="dark" aria-labelledby="built-title">
+  <div class="catalog-head">
+    <div><h2 class="catalog-title" id="built-title" data-split>Построено</h2></div>
+    <p class="catalog-lead">Реальные дома наших клиентов: от участка до ключей. Любой можно посетить, договоримся о визите.</p>
+    <button class="catalog-all" type="button" data-modal="visit">Записаться на экскурсию</button>
+  </div>
+
+  <dl class="metrics">
+    <div><dd data-count="214">214</dd><dt>дома сданы заказчикам</dt></div>
+    <div><dd data-count="98" data-suffix="%">98%</dd><dt>объектов сданы в&nbsp;срок</dt></div>
+    <div><dd data-count="14">14</dd><dt>лет на рынке</dt></div>
+    <div><dd data-count="31200">31 200</dd><dt>м² построено</dt></div>
+  </dl>
+
+  <ul class="works">
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Современный дом с бассейном и панорамным остеклением" style="--ar:16 / 10"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Дом у воды</h3>
+        <p class="work-place">Истра</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2025</dd></div>
+          <div><dt>Площадь</dt><dd>186 м²</dd></div>
+          <div><dt>Срок</dt><dd>7 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Дом с чёрным фасадом и тёплыми окнами в лесу" style="--ar:4 / 5"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Лесной дом</h3>
+        <p class="work-place">Дмитров</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2025</dd></div>
+          <div><dt>Площадь</dt><dd>142 м²</dd></div>
+          <div><dt>Срок</dt><dd>6 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Белый дом с бассейном и террасой" style="--ar:4 / 5"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Усадьба</h3>
+        <p class="work-place">Руза</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2024</dd></div>
+          <div><dt>Площадь</dt><dd>248 м²</dd></div>
+          <div><dt>Срок</dt><dd>9 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Дом с деревянной отделкой фасада" style="--ar:1 / 1"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Дом в сосняке</h3>
+        <p class="work-place">Пушкино</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2024</dd></div>
+          <div><dt>Площадь</dt><dd>118 м²</dd></div>
+          <div><dt>Срок</dt><dd>5 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Двухэтажная вилла с бассейном" style="--ar:4 / 5"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Вилла</h3>
+        <p class="work-place">Одинцово</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2024</dd></div>
+          <div><dt>Площадь</dt><dd>212 м²</dd></div>
+          <div><dt>Срок</dt><dd>8 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+    <li class="work">
+      <figure class="work-fig"><img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1400&q=75&auto=format&fit=crop" width="1400" height="1000" loading="lazy" alt="Деревянный дом у озера среди заснеженных елей" style="--ar:21 / 9"></figure>
+      <div class="work-cap">
+        <h3 class="work-name">Зимний дом</h3>
+        <p class="work-place">Волоколамск</p>
+        <dl class="work-meta">
+          <div><dt>Год</dt><dd>2023</dd></div>
+          <div><dt>Площадь</dt><dd>96 м²</dd></div>
+          <div><dt>Срок</dt><dd>5 мес</dd></div>
+        </dl>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- 06. Этапы -->
+<section class="light process" id="process" data-bar="light" aria-labelledby="process-title">
+  <div class="light-head">
+    <h2 class="light-title" id="process-title" data-split>Как мы<br>строим</h2>
+    <p class="light-lead">Шесть этапов, и&nbsp;на&nbsp;каждом понятно, что происходит, сколько это длится и&nbsp;что вы получаете в&nbsp;итоге.</p>
+    <ul class="light-list">
+      <li>Фиксированная цена</li>
+      <li>Фотоотчёт каждую неделю</li>
+      <li>Оплата за принятый этап</li>
+    </ul>
+  </div>
+
+  <div class="process-body">
+    <div class="process-side">
+      <figure class="process-frame" aria-hidden="true">
+        <img class="is-active" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+        <img src="https://images.unsplash.com/photo-1615461475583-fc3100788a93?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+        <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1000&q=75&auto=format&fit=crop" width="1000" height="1250" loading="lazy" alt="">
+      </figure>
+      <p class="process-total"><b>175</b><span>дней в среднем от договора до ключей</span></p>
+    </div>
+
+    <ol class="stages" id="stages">
+      <li class="stage is-active">
+        <p class="num">01 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Замер и проект</h3>
+          <p class="stage-days">14 дней</p>
+        </div>
+        <p class="col-text">Инженер выезжает на участок, проверяет геологию и коммуникации. Архитектор готовит проект с планировками и сметой.</p>
+        <p class="stage-get"><span>Результат</span>Проект, смета, 3D-визуализация</p>
+      </li>
+      <li class="stage">
+        <p class="num">02 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Договор и цена</h3>
+          <p class="stage-days">3 дня</p>
+        </div>
+        <p class="col-text">Закрепляем стоимость, сроки и график платежей. Оплата привязана к приёмке этапов, а не к датам.</p>
+        <p class="stage-get"><span>Результат</span>Договор с фиксированной ценой</p>
+      </li>
+      <li class="stage">
+        <p class="num">03 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Фундамент</h3>
+          <p class="stage-days">21 день</p>
+        </div>
+        <p class="col-text">Разбивка, армирование, заливка. После набора прочности независимый технадзор делает замеры и подписывает акт.</p>
+        <p class="stage-get"><span>Результат</span>Акт приёмки фундамента</p>
+      </li>
+      <li class="stage">
+        <p class="num">04 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Коробка и кровля</h3>
+          <p class="stage-days">60 дней</p>
+        </div>
+        <p class="col-text">Стены, перекрытия, стропильная система, кровля и окна. Каждую неделю прораб присылает фотоотчёт.</p>
+        <p class="stage-get"><span>Результат</span>Дом под крышей, фотоотчёты</p>
+      </li>
+      <li class="stage">
+        <p class="num">05 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Инженерия и отделка</h3>
+          <p class="stage-days">70 дней</p>
+        </div>
+        <p class="col-text">Электрика, отопление, водоснабжение, отделка по выбранной комплектации, благоустройство участка.</p>
+        <p class="stage-get"><span>Результат</span>Дом готов к проживанию</p>
+      </li>
+      <li class="stage">
+        <p class="num">06 <span class="dash" aria-hidden="true"></span></p>
+        <div class="stage-top">
+          <h3 class="stage-title">Сдача и ключи</h3>
+          <p class="stage-days">7 дней</p>
+        </div>
+        <p class="col-text">Совместный осмотр с инженером, устранение замечаний, передача документов и гарантийного талона.</p>
+        <p class="stage-get"><span>Результат</span>Ключи и гарантия 15 лет</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 07. Стоимость -->
+<section class="dark calc" id="calc" data-bar="dark" aria-labelledby="calc-title">
+  <div class="catalog-head">
+    <div><h2 class="catalog-title" id="calc-title" data-split>Стоимость</h2></div>
+    <p class="catalog-lead">Выберите комплектацию и параметры дома: покажем вилку цены, срок и платёж по ипотеке. Точную смету сделаем бесплатно за&nbsp;1&nbsp;день.</p>
+  </div>
+
+  <form class="calc-form" id="calc-form" novalidate>
+    <fieldset class="tiers">
+      <legend>Комплектация</legend>
+      <label class="tier"><input type="radio" name="tier" value="52000">
+        <span class="tier-name">Контур</span>
+        <span class="tier-price">от 52 000 ₽/м²</span>
+        <span class="tier-list"><i>Фундамент, стены, кровля</i><i>Окна и входная дверь</i><i>Черновая электрика и вода</i><i>Септик в подарок</i></span>
+      </label>
+      <label class="tier"><input type="radio" name="tier" value="68000" checked>
+        <span class="tier-name">Основа</span>
+        <span class="tier-price">от 68 000 ₽/м²</span>
+        <span class="tier-list"><i>Всё из «Контура»</i><i>Разводка и отопление</i><i>Черновая отделка стен и пола</i><i>Фасад под ключ</i></span>
+      </label>
+      <label class="tier"><input type="radio" name="tier" value="94000">
+        <span class="tier-name">Резиденция</span>
+        <span class="tier-price">от 94 000 ₽/м²</span>
+        <span class="tier-list"><i>Всё из «Основы»</i><i>Чистовая отделка и сантехника</i><i>Проект интерьера</i><i>Благоустройство участка</i></span>
+      </label>
+    </fieldset>
+
+    <div class="calc-grid">
+      <div class="calc-controls">
+        <div class="range">
+          <label for="calc-area">Площадь дома</label>
+          <output id="calc-area-out" for="calc-area">130 м²</output>
+          <input id="calc-area" type="range" min="60" max="300" step="5" value="130">
+        </div>
+        <fieldset class="seg">
+          <legend>Этажность</legend>
+          <label><input type="radio" name="floors" value="1"><span>1 этаж</span></label>
+          <label><input type="radio" name="floors" value="2" checked><span>2 этажа</span></label>
+        </fieldset>
+        <fieldset class="seg">
+          <legend>Материал стен</legend>
+          <label><input type="radio" name="mat" value="1" checked><span>Каркас</span></label>
+          <label><input type="radio" name="mat" value="1.12"><span>Брус</span></label>
+          <label><input type="radio" name="mat" value="1.18"><span>Газобетон</span></label>
+        </fieldset>
+      </div>
+
+      <div class="calc-result" aria-live="polite">
+        <p class="calc-label">Ориентировочная стоимость</p>
+        <p class="calc-price" id="calc-price">—</p>
+        <dl class="calc-facts">
+          <div><dt>Срок строительства</dt><dd id="calc-term">—</dd></div>
+          <div><dt>Платёж по ипотеке</dt><dd id="calc-pay">—</dd></div>
+        </dl>
+        <p class="calc-note">Ипотека: ставка 6%, срок 20 лет, первый взнос 20%. Расчёт ориентировочный и не является офертой.</p>
+        <button class="btn btn--solid" type="button" data-modal="estimate">Получить точную смету</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- 08. Сейчас строим -->
+<section class="light live" id="live" data-bar="light" data-nav="built" aria-labelledby="live-title">
+  <div class="light-head">
+    <h2 class="light-title" id="live-title" data-split>Сейчас<br>строим</h2>
+    <p class="light-lead">Три объекта, которые идут прямо сейчас. Приезжайте посмотреть: покажем стройку, этапы и ответим на вопросы инженера.</p>
+    <ul class="light-list">
+      <li>12 объектов в работе</li>
+      <li>Фотоотчёт по пятницам</li>
+    </ul>
+  </div>
+
+  <ul class="sites">
+    <li class="site">
+      <figure class="site-fig"><img src="https://images.unsplash.com/photo-1615461475583-fc3100788a93?w=1000&q=75&auto=format&fit=crop" width="1000" height="750" loading="lazy" alt="Монолитный каркас дома в лесах"></figure>
+      <div class="site-top"><h3 class="site-name">Истра, участок 14</h3><p class="site-pct"><span data-count="56" data-suffix="%">56%</span></p></div>
+      <div class="bar-track" style="--w:56%"><i></i></div>
+      <dl class="site-meta">
+        <div><dt>Проект</dt><dd>Дом «Кедр 202»</dd></div>
+        <div><dt>Этап</dt><dd>Коробка и кровля</dd></div>
+        <div><dt>День</dt><dd>94 из 168</dd></div>
+        <div><dt>Обновлено</dt><dd>18 октября</dd></div>
+      </dl>
+    </li>
+    <li class="site">
+      <figure class="site-fig"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=75&auto=format&fit=crop" width="1000" height="750" loading="lazy" alt="Армирование фундамента"></figure>
+      <div class="site-top"><h3 class="site-name">Дмитров, участок 7</h3><p class="site-pct"><span data-count="14" data-suffix="%">14%</span></p></div>
+      <div class="bar-track" style="--w:14%"><i></i></div>
+      <dl class="site-meta">
+        <div><dt>Проект</dt><dd>Дом «Ясень 160»</dd></div>
+        <div><dt>Этап</dt><dd>Фундамент</dd></div>
+        <div><dt>День</dt><dd>21 из 150</dd></div>
+        <div><dt>Обновлено</dt><dd>19 октября</dd></div>
+      </dl>
+    </li>
+    <li class="site">
+      <figure class="site-fig"><img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=1000&q=75&auto=format&fit=crop" width="1000" height="750" loading="lazy" alt="Деревянный интерьер при отделке"></figure>
+      <div class="site-top"><h3 class="site-name">Руза, участок 31</h3><p class="site-pct"><span data-count="80" data-suffix="%">80%</span></p></div>
+      <div class="bar-track" style="--w:80%"><i></i></div>
+      <dl class="site-meta">
+        <div><dt>Проект</dt><dd>Дом «Бук 191»</dd></div>
+        <div><dt>Этап</dt><dd>Отделка</dd></div>
+        <div><dt>День</dt><dd>141 из 176</dd></div>
+        <div><dt>Обновлено</dt><dd>17 октября</dd></div>
+      </dl>
+    </li>
+  </ul>
+  <div class="live-cta"><button class="btn btn--ink" type="button" data-modal="visit">Приехать на объект</button></div>
+</section>
+
+<!-- 09. Отзывы -->
+<section class="dark reviews" id="reviews" data-bar="dark" data-nav="about" aria-labelledby="reviews-title">
+  <div class="catalog-head">
+    <div><h2 class="catalog-title" id="reviews-title" data-split>Отзывы</h2></div>
+    <p class="catalog-lead">Говорят заказчики, которые уже живут в наших домах. Контакты передадим, если захотите спросить лично.</p>
+  </div>
+
+  <div class="rv">
+    <div class="rv-photos" aria-hidden="true">
+      <img class="is-active" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&q=75&auto=format&fit=crop" width="1200" height="1500" loading="lazy" alt="">
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=75&auto=format&fit=crop" width="1200" height="1500" loading="lazy" alt="">
+      <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=1200&q=75&auto=format&fit=crop" width="1200" height="1500" loading="lazy" alt="">
+    </div>
+    <div class="rv-body">
+      <div class="rv-quotes">
+        <figure class="rv-item is-active" id="rv-0" role="tabpanel" aria-label="Отзыв 1">
+          <blockquote>Цену зафиксировали в договоре, и она не изменилась ни на рубль. Каждую пятницу прораб присылал фотоотчёт, поэтому мы ни разу не ездили на стройку «проверять».</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=75&auto=format&fit=crop" width="200" height="200" loading="lazy" alt="Портрет: Анна Орлова">
+            <span><b>Анна Орлова</b>Дмитров, дом «Дуб 98»</span>
+          </figcaption>
+        </figure>
+        <figure class="rv-item" id="rv-1" role="tabpanel" aria-label="Отзыв 2">
+          <blockquote>Брали с ипотекой: банк и маткапитал оформили за нас. Дом сдали на девять дней раньше срока. На моей памяти это первый такой случай.</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=75&auto=format&fit=crop" width="200" height="200" loading="lazy" alt="Портрет: Дмитрий Фёдоров">
+            <span><b>Дмитрий Фёдоров</b>Истра, дом «Кедр 202»</span>
+          </figcaption>
+        </figure>
+        <figure class="rv-item" id="rv-2" role="tabpanel" aria-label="Отзыв 3">
+          <blockquote>Боялась, что каркасный дом будет холодным. В минус двадцать пять внутри плюс двадцать два, а счета за отопление меньше, чем в городской квартире.</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=75&auto=format&fit=crop" width="200" height="200" loading="lazy" alt="Портрет: Марина Лисицына">
+            <span><b>Марина Лисицына</b>Пушкино, дом «Ольха 84»</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="rv-tabs" role="tablist" aria-label="Отзывы">
+        <button type="button" role="tab" aria-selected="true" aria-controls="rv-0" aria-label="Отзыв: Анна Орлова">01</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="rv-1" aria-label="Отзыв: Дмитрий Фёдоров">02</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="rv-2" aria-label="Отзыв: Марина Лисицына">03</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Команда и гарантии -->
+<section class="light team" id="team" data-bar="light" data-nav="about" aria-labelledby="team-title">
+  <div class="light-head">
+    <h2 class="light-title" id="team-title" data-split>Люди и<br>гарантии</h2>
+    <p class="light-lead">За каждым домом стоят конкретные люди с&nbsp;именами и&nbsp;подписями. Их контакты вы получите в&nbsp;договоре.</p>
+  </div>
+
+  <ul class="people">
+    <li class="person">
+      <figure class="person-fig"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=700&q=75&auto=format&fit=crop" width="700" height="875" loading="lazy" alt="Портрет: Артём Воронов, основатель и директор"></figure>
+      <h3 class="person-name">Артём Воронов</h3>
+      <p class="person-role">Основатель и директор</p>
+      <p class="person-note">Строит дома с 2012 года</p>
+    </li>
+    <li class="person">
+      <figure class="person-fig"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&q=75&auto=format&fit=crop" width="700" height="875" loading="lazy" alt="Портрет: Елена Март, главный инженер"></figure>
+      <h3 class="person-name">Елена Март</h3>
+      <p class="person-role">Главный инженер</p>
+      <p class="person-note">Лично подписывает каждый проект</p>
+    </li>
+    <li class="person">
+      <figure class="person-fig"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=700&q=75&auto=format&fit=crop" width="700" height="875" loading="lazy" alt="Портрет: Игорь Касаткин, руководитель строительства"></figure>
+      <h3 class="person-name">Игорь Касаткин</h3>
+      <p class="person-role">Руководитель строительства</p>
+      <p class="person-note">Отвечает за сроки на всех площадках</p>
+    </li>
+    <li class="person">
+      <figure class="person-fig"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=700&q=75&auto=format&fit=crop" width="700" height="875" loading="lazy" alt="Портрет: Мария Лесникова, главный архитектор"></figure>
+      <h3 class="person-name">Мария Лесникова</h3>
+      <p class="person-role">Главный архитектор</p>
+      <p class="person-note">Автор 40 проектов каталога</p>
+    </li>
+  </ul>
+
+  <dl class="guar">
+    <div class="guar-row">
+      <dt><span class="num">01</span>Фиксированная цена</dt>
+      <dd>Стоимость и сроки закреплены в договоре. Подорожание материалов наш риск, а не ваш.</dd>
+    </div>
+    <div class="guar-row">
+      <dt><span class="num">02</span>Гарантия 15 лет</dt>
+      <dd>На несущие конструкции и кровлю. Гарантийный талон выдаём при сдаче дома.</dd>
+    </div>
+    <div class="guar-row">
+      <dt><span class="num">03</span>Поэтапная оплата</dt>
+      <dd>Вы платите за выполненный этап после приёмки. Никаких стопроцентных предоплат.</dd>
+    </div>
+    <div class="guar-row">
+      <dt><span class="num">04</span>СРО и страхование</dt>
+      <dd>Членство в СРО, ответственность застрахована на 30 млн рублей.</dd>
+    </div>
+    <div class="guar-row">
+      <dt><span class="num">05</span>Независимый технадзор</dt>
+      <dd>Инженер проверяет каждый этап и подписывает акт. Копии актов вы получаете сразу.</dd>
+    </div>
+  </dl>
+</section>
+
+<!-- 11. Вопросы -->
+<section class="faq" id="faq" data-bar="dark" aria-labelledby="faq-title">
+  <div class="hero-bg faq-bg" aria-hidden="true">
+    <img class="is-active" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+    <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" loading="lazy" alt="">
+  </div>
+  <div class="hero-shade hero-shade--strong" aria-hidden="true"></div>
+
+  <div class="faq-inner">
+    <div class="faq-head">
+      <h2 class="faq-title" id="faq-title" data-split>Вопросы<br>и ответы</h2>
+      <p class="faq-caption" id="faq-caption" aria-live="polite">Договор и смета</p>
+    </div>
+    <ul class="faq-list">
+      <li class="faq-item is-open">
+        <h3><button class="faq-q" type="button" id="fq-0" aria-expanded="true" aria-controls="fa-0" data-caption="Договор и смета"><span class="faq-n">01</span><span>Цена может вырасти после подписания договора?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-0" role="region" aria-labelledby="fq-0"><div><p>Нет. Стоимость, объём работ и сроки фиксируются в договоре. Если материалы дорожают, это наш риск. Изменить смету можно только по вашему желанию, например при замене комплектации.</p></div></div>
+      </li>
+      <li class="faq-item">
+        <h3><button class="faq-q" type="button" id="fq-1" aria-expanded="false" aria-controls="fa-1" data-caption="Бригада на площадке"><span class="faq-n">02</span><span>Сколько занимает строительство?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-1" role="region" aria-labelledby="fq-1"><div><p>В среднем 175 дней для дома 120–150 м² от подписания договора до ключей. Точный график и этапы оплаты вы получаете в договоре, а прораб каждую неделю присылает фотоотчёт.</p></div></div>
+      </li>
+      <li class="faq-item">
+        <h3><button class="faq-q" type="button" id="fq-2" aria-expanded="false" aria-controls="fa-2" data-caption="Собственное производство"><span class="faq-n">03</span><span>Из чего вы строите?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-2" role="region" aria-labelledby="fq-2"><div><p>Каркас из сухого бруса камерной сушки с нашего производства, газобетон и клеёный брус. Подберём материал под бюджет, участок и ваш образ жизни, а не под склад.</p></div></div>
+      </li>
+      <li class="faq-item">
+        <h3><button class="faq-q" type="button" id="fq-3" aria-expanded="false" aria-controls="fa-3" data-caption="Ключи от нового дома"><span class="faq-n">04</span><span>Можно ли в ипотеку или за маткапитал?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-3" role="region" aria-labelledby="fq-3"><div><p>Да. Работаем с банками-партнёрами, одобрение занимает 1–3 дня. Материнский капитал направляем на строительство, документы готовим сами. Платёж посчитает калькулятор выше.</p></div></div>
+      </li>
+      <li class="faq-item">
+        <h3><button class="faq-q" type="button" id="fq-4" aria-expanded="false" aria-controls="fa-4" data-caption="Дом сданного объекта"><span class="faq-n">05</span><span>Что с гарантией после сдачи?</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-4" role="region" aria-labelledby="fq-4"><div><p>15 лет на несущие конструкции и кровлю, 3 года на инженерные системы и отделку. Если появляется дефект, приезжаем в течение 5 рабочих дней и устраняем за свой счёт.</p></div></div>
+      </li>
+      <li class="faq-item">
+        <h3><button class="faq-q" type="button" id="fq-5" aria-expanded="false" aria-controls="fa-5" data-caption="Дом на участке в лесу"><span class="faq-n">06</span><span>У меня ещё нет участка</span><i aria-hidden="true"></i></button></h3>
+        <div class="faq-a" id="fa-5" role="region" aria-labelledby="fq-5"><div><p>Поможем выбрать: проверим геологию, статус земли и подключение коммуникаций до покупки. Часто это экономит сотни тысяч рублей на фундаменте и подводке.</p></div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 12. Контакты -->
+<section class="contact" id="contact" data-bar="dark" aria-labelledby="contact-title">
+  <div class="hero-bg" aria-hidden="true">
+    <img class="is-active" src="https://images.unsplash.com/photo-1709182249672-2ef78a1ff02e?w=2000&q=75&auto=format&fit=crop" width="2000" height="1333" alt="" loading="lazy">
+  </div>
+  <div class="hero-shade hero-shade--strong" aria-hidden="true"></div>
+
+  <div class="hero-side contact-side">
+    <p class="counter counter--static" aria-hidden="true"><span class="counter-cur">12</span><span class="dash"></span><span class="counter-total">12</span></p>
+    <p class="hero-note is-active">Оставьте телефон, и&nbsp;менеджер перезвонит в&nbsp;течение 15&nbsp;минут. Или напишите <em>в&nbsp;любой мессенджер:</em> консультация без отрыва от&nbsp;дел.</p>
+    <dl class="contact-list">
+      <div><dt>Телефон</dt><dd><a href="tel:+74950000000">+7 (495) 000-00-00</a></dd></div>
+      <div><dt>Мессенджеры</dt><dd><a href="https://wa.me/70000000000" target="_blank" rel="noopener">WhatsApp</a>, <a href="https://t.me/versta_dom" target="_blank" rel="noopener">Telegram</a></dd></div>
+      <div><dt>Почта</dt><dd><a href="mailto:hello@versta-dom.example">hello@versta-dom.example</a></dd></div>
+      <div><dt>Часы работы</dt><dd>ежедневно с 9:00 до 21:00</dd></div>
+    </dl>
+  </div>
+
+  <h2 class="hero-title contact-title" id="contact-title" data-split>Обсудим<br>ваш дом</h2>
+
+  <form class="callback" id="callback" novalidate>
+    <div class="field">
+      <label for="cb-name">Имя</label>
+      <input id="cb-name" name="name" type="text" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="cb-phone">Телефон</label>
+      <input id="cb-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="cb-phone-err">
+      <p class="field-error" id="cb-phone-err" hidden>Введите номер полностью: 10 цифр после +7.</p>
+    </div>
+    <fieldset class="choice">
+      <legend>Как связаться</legend>
+      <label><input type="radio" name="channel" value="call" checked> Звонок</label>
+      <label><input type="radio" name="channel" value="whatsapp"> WhatsApp</label>
+      <label><input type="radio" name="channel" value="telegram"> Telegram</label>
+    </fieldset>
+    <label class="consent" for="cb-consent">
+      <input type="checkbox" id="cb-consent" name="consent">
+      <span>Соглашаюсь с&nbsp;<a href="#contact">политикой обработки данных</a></span>
+    </label>
+    <p class="field-error" id="cb-consent-err" hidden>Нужно согласие на обработку данных.</p>
+    <button class="submit" type="submit">Заказать звонок <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></button>
+    <p class="callback-status" id="cb-status" role="status" hidden></p>
+  </form>
+
+  <footer class="contact-foot">
+    <p>© ООО «Верста», <span id="year">2026</span>. Концепт сайта: названия, объекты, цены, люди и отзывы вымышлены.</p>
+    <p class="hero-meta contact-meta"><span class="hero-meta-city">Москва, Дмитровское шоссе, 100 <span class="dash" aria-hidden="true"></span></span><span>Офис и шоу-рум, ежедневно</span></p>
+  </footer>
+</section>
+
+<!-- Мессенджеры -->
+<div class="fab" id="fab">
+  <ul class="fab-list" id="fab-list">
+    <li><a href="https://wa.me/70000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+    <li><a href="https://t.me/versta_dom" target="_blank" rel="noopener">Telegram</a></li>
+    <li><a href="tel:+74950000000">Позвонить</a></li>
+  </ul>
+  <button class="fab-btn" type="button" aria-expanded="false" aria-controls="fab-list" aria-label="Написать нам">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<!-- Окно заявки -->
+<dialog class="modal" id="modal" aria-labelledby="modal-title">
+  <form class="modal-form callback-form" method="dialog" novalidate>
+    <button class="modal-close" type="button" aria-label="Закрыть" data-close><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 2l14 14M16 2L2 16" stroke="currentColor" fill="none"/></svg></button>
+    <h2 class="modal-title" id="modal-title">Заказать звонок</h2>
+    <p class="modal-note" id="modal-note">Менеджер перезвонит в течение 15 минут.</p>
+    <p class="modal-estimate" id="modal-estimate" hidden></p>
+    <div class="field">
+      <label for="md-name">Имя</label>
+      <input id="md-name" name="name" type="text" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="md-phone">Телефон</label>
+      <input id="md-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="md-phone-err">
+      <p class="field-error" id="md-phone-err" hidden>Введите номер полностью: 10 цифр после +7.</p>
+    </div>
+    <label class="consent" for="md-consent">
+      <input type="checkbox" id="md-consent" name="consent">
+      <span>Соглашаюсь с&nbsp;политикой обработки данных</span>
+    </label>
+    <p class="field-error" id="md-consent-err" hidden>Нужно согласие на обработку данных.</p>
+    <button class="submit" type="submit" id="modal-submit">Заказать звонок <svg class="arrow" width="34" height="8" aria-hidden="true"><use href="#arrow"/></svg></button>
+    <p class="callback-status" id="md-status" role="status" hidden></p>
+  </form>
+</dialog>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
